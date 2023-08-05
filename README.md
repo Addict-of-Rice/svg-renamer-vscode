@@ -6,7 +6,7 @@ The SVG Attribute to CamelCase extension for Visual Studio Code allows you to qu
 
 ## Demo
 
-![Demo]([https://github.com/admondtamang/svg-renamer-vscode/demo.gif](https://github.com/admondtamang/svg-renamer-vscode/blob/main/demo.gif))
+![Demo]([https://github.com/admondtamang/svg-renamer-vscode/demo.gif](https://github.com/admondtamang/svg-renamer-vscode/demo.gif))
 
 ## Features
 
