@@ -11,7 +11,11 @@
   ],
   "activationEvents": [],
   "main": "./extension.js",
+  "publisher": "admondtamang",
   "icon": "./svg-file.jpg",
+  "repository": {
+    "url": "https://github.com/admondtamang/svg-renamer-vscode"
+  },
   "contributes": {
     "commands": [
       {
