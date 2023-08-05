@@ -1,5 +1,4 @@
 const vscode = require("vscode");
-const { getRandomEmoji } = require("./utils/randomEmoji");
 
 function activate(context) {
   console.log(
@@ -8,7 +7,7 @@ function activate(context) {
 
   let replaceSvgAttributes = vscode.commands.registerCommand(
     "rename-svg-attributes.replaceSvgAttributes",
-    function () {
+    () => {
       const editor = vscode.window.activeTextEditor;
 
       if (editor) {
@@ -33,7 +32,7 @@ function activate(context) {
         );
       }
 
-      vscode.window.showInformationMessage(getRandomEmoji() + " ohh yeah!");
+      vscode.window.showInformationMessage(`ohh yeah!`);
     }
   );
   context.subscriptions.push(replaceSvgAttributes);
