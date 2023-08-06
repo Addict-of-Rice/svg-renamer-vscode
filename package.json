@@ -2,7 +2,7 @@
   "name": "rename-svg-attributes",
   "displayName": "svg-renamer",
   "description": "remove warning in react using svg",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.81.0"
   },
