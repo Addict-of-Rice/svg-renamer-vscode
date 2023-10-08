@@ -4,9 +4,6 @@
 
 The SVG Attribute to CamelCase extension for Visual Studio Code allows you to quickly and easily convert SVG attributes with hyphens in their keys to their corresponding camelCase versions. When working with SVG files, you might encounter attributes like stroke-linecap, stroke-linejoin, fill-opacity, and more, which use hyphens to separate words. However, in JSX syntax or React components, it's more common to use camelCase for attribute names, like strokeLinecap, strokeLinejoin, fillOpacity, etc. This extension simplifies the conversion process and helps maintain consistent naming conventions in your SVG files.
 
-## Demo
-![image](https://github.com/admondtamang/svg-renamer-vscode/assets/22430270/7495635d-bc57-4d33-b998-ae72a7e868b7)
-
 ## Features
 
 - Replaces all SVG attributes with hyphens in their keys with their corresponding camelCase versions.
@@ -15,6 +12,8 @@ The SVG Attribute to CamelCase extension for Visual Studio Code allows you to qu
 - Allows you to apply the attribute conversion with a single command or keybinding.
 
 ## How to Use
+
+![feature 1](demo.gif)
 
 1. Install the "SVG Attribute to CamelCase" extension from the Visual Studio Code Marketplace.
 2. Open an XML or SVG file in the Visual Studio Code editor.
