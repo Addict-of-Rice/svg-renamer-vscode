@@ -1,8 +1,8 @@
 {
-  "name": "rename-svg-attributes",
-  "displayName": "svg-renamer",
+  "name": "svg-fix",
+  "displayName": "svg fixer",
   "description": "remove warning in react using svg",
-  "version": "0.0.4",
+  "version": "2.0.0",
   "engines": {
     "vscode": "^1.81.0"
   },
@@ -10,7 +10,7 @@
     "Other"
   ],
   "activationEvents": [],
-  "main": "./extension.js",
+  "main": "./out/extension.js",
   "publisher": "admondtamang",
   "icon": "./svg-file.jpg",
   "repository": {
@@ -19,19 +19,23 @@
   "contributes": {
     "commands": [
       {
-        "command": "rename-svg-attributes.replaceSvgAttributes",
-        "title": "Rename Svg Attribue"
+        "command": "svg-fix.replaceSvgAttributes",
+        "title": "SVG Rename Attributes"
       },
       {
-        "command": "extension.previewSvg",
-        "title": "Preview SVG"
+        "command": "svg-fix.previewSvg",
+        "title": "SVG Preview"
       }
     ]
   },
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "node ./test/runTest.js"
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p .",
+    "watch": "tsc -watch -p .",
+    "pre-publish": "vsce package",
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "@types/vscode": "^1.81.0",
