@@ -21,6 +21,10 @@
       {
         "command": "rename-svg-attributes.replaceSvgAttributes",
         "title": "Rename Svg Attribue"
+      },
+      {
+        "command": "extension.previewSvg",
+        "title": "Preview SVG"
       }
     ]
   },
