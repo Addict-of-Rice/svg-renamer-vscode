@@ -1,17 +1,28 @@
 import * as fs from "fs";
 import * as vscode from "vscode";
 
-export const replaceSvgAttributes = () => {
+export const replaceSvgAttributes = (hyphen: boolean, colon: boolean) => {
   const editor = vscode.window.activeTextEditor;
 
   if (editor) {
     const document = editor.document;
     const text = document.getText();
 
-    const updatedText = text.replace(
-      /([a-z]+)-([a-z])/g,
-      (_match, prefix, suffix) => `${prefix}${suffix.toUpperCase()}`
-    );
+    let updatedText = text;
+    
+    if (hyphen) {
+      updatedText = updatedText.replace(
+        /([a-z]+)-([a-z])/g,
+        (_match, prefix, suffix) => `${prefix}${suffix.toUpperCase()}`
+      );
+    }
+
+    if (colon) {
+      updatedText = updatedText.replace(
+        /([a-z]+):([a-zA-Z])/g,
+        (_match, prefix, suffix) => `${prefix}${suffix.toUpperCase()}`
+      );
+    }
 
     const fullRange = new vscode.Range(
       document.positionAt(0),

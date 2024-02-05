@@ -12,7 +12,7 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "publisher": "admondtamang",
-  "icon": "./svg-file.jpg",
+  "icon": "svg-file.jpg",
   "repository": {
     "url": "https://github.com/admondtamang/svg-renamer-vscode"
   },
@@ -21,6 +21,14 @@
       {
         "command": "svg-fix.replaceSvgAttributes",
         "title": "SVG Rename Attributes"
+      },
+      {
+        "command": "svg-fix.replaceSvgAttributesHyphen",
+        "title": "SVG Rename Attributes Hyphen"
+      },
+      {
+        "command": "svg-fix.replaceSvgAttributesColon",
+        "title": "SVG Rename Attributes Colon"
       },
       {
         "command": "svg-fix.previewSvg",
